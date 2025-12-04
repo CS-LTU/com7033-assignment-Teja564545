@@ -1,0 +1,585 @@
+2025-12-03 15:01:15,349 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 15:01:15,349 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 15:01:15,350 [INFO]  * Restarting with stat
+2025-12-03 15:01:15,686 [WARNING]  * Debugger is active!
+2025-12-03 15:01:15,689 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 15:02:54,995 [INFO] 127.0.0.1 - - [03/Dec/2025 15:02:54] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-03 15:02:55,013 [INFO] 127.0.0.1 - - [03/Dec/2025 15:02:55] "GET /login HTTP/1.1" 200 -
+2025-12-03 15:02:55,173 [WARNING] 404 error at /favicon.ico
+2025-12-03 15:02:55,175 [INFO] 127.0.0.1 - - [03/Dec/2025 15:02:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 15:03:11,221 [INFO] 127.0.0.1 - - [03/Dec/2025 15:03:11] "POST /login HTTP/1.1" 200 -
+2025-12-03 15:03:13,482 [INFO] 127.0.0.1 - - [03/Dec/2025 15:03:13] "GET /register HTTP/1.1" 200 -
+2025-12-03 15:03:32,865 [INFO] New user registered: Teja5645
+2025-12-03 15:03:32,866 [INFO] 127.0.0.1 - - [03/Dec/2025 15:03:32] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-12-03 15:03:32,869 [INFO] 127.0.0.1 - - [03/Dec/2025 15:03:32] "GET /login HTTP/1.1" 200 -
+2025-12-03 15:03:50,333 [INFO] User logged in: Teja5645
+2025-12-03 15:03:50,334 [INFO] 127.0.0.1 - - [03/Dec/2025 15:03:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-03 15:03:50,344 [INFO] 127.0.0.1 - - [03/Dec/2025 15:03:50] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 15:04:00,128 [INFO] 127.0.0.1 - - [03/Dec/2025 15:04:00] "GET /patients HTTP/1.1" 200 -
+2025-12-03 15:04:05,251 [INFO] 127.0.0.1 - - [03/Dec/2025 15:04:05] "GET /patients/67 HTTP/1.1" 200 -
+2025-12-03 15:05:25,857 [INFO] 127.0.0.1 - - [03/Dec/2025 15:05:25] "GET /patients HTTP/1.1" 200 -
+2025-12-03 15:05:29,999 [INFO] 127.0.0.1 - - [03/Dec/2025 15:05:29] "GET /patients?page=2 HTTP/1.1" 200 -
+2025-12-03 16:47:10,279 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 16:47:10,279 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 16:47:10,280 [INFO]  * Restarting with stat
+2025-12-03 16:47:10,616 [WARNING]  * Debugger is active!
+2025-12-03 16:47:10,617 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 16:52:54,435 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\forms.py', reloading
+2025-12-03 16:52:54,527 [INFO]  * Restarting with stat
+2025-12-03 16:52:54,947 [WARNING]  * Debugger is active!
+2025-12-03 16:52:54,949 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 16:58:45,783 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\forms.py', reloading
+2025-12-03 16:58:45,889 [INFO]  * Restarting with stat
+2025-12-03 16:58:46,269 [WARNING]  * Debugger is active!
+2025-12-03 16:58:46,270 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 16:59:22,216 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 16:59:22,216 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 16:59:22,216 [INFO]  * Restarting with stat
+2025-12-03 16:59:22,555 [WARNING]  * Debugger is active!
+2025-12-03 16:59:22,556 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:00:15,744 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:15] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-03 17:00:15,753 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:15] "GET /login HTTP/1.1" 200 -
+2025-12-03 17:00:15,991 [WARNING] 404 error at /favicon.ico
+2025-12-03 17:00:15,993 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-03 17:00:54,367 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:54] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2025-12-03 17:00:54,460 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:54] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-03 17:00:54,595 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:54] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-03 17:00:54,693 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:54] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=UHiIwHsFGEKTN4tcdtlq HTTP/1.1" 200 -
+2025-12-03 17:00:54,924 [INFO] 127.0.0.1 - - [03/Dec/2025 17:00:54] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-03 17:01:03,644 [INFO] 127.0.0.1 - - [03/Dec/2025 17:01:03] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2025-12-03 17:01:03,947 [INFO] 127.0.0.1 - - [03/Dec/2025 17:01:03] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-03 17:01:03,962 [INFO] 127.0.0.1 - - [03/Dec/2025 17:01:03] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-03 17:01:04,281 [INFO] 127.0.0.1 - - [03/Dec/2025 17:01:04] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png&s=UHiIwHsFGEKTN4tcdtlq HTTP/1.1[0m" 304 -
+2025-12-03 17:02:35,433 [INFO] 127.0.0.1 - - [03/Dec/2025 17:02:35] "POST /login HTTP/1.1" 200 -
+2025-12-03 17:02:39,248 [INFO] 127.0.0.1 - - [03/Dec/2025 17:02:39] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+2025-12-03 17:02:39,260 [INFO] 127.0.0.1 - - [03/Dec/2025 17:02:39] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-03 17:02:39,565 [INFO] 127.0.0.1 - - [03/Dec/2025 17:02:39] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-03 17:02:39,843 [INFO] 127.0.0.1 - - [03/Dec/2025 17:02:39] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png&s=UHiIwHsFGEKTN4tcdtlq HTTP/1.1[0m" 304 -
+2025-12-03 17:04:19,036 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\forms.py', reloading
+2025-12-03 17:04:19,117 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\forms.py', reloading
+2025-12-03 17:04:19,140 [INFO]  * Restarting with stat
+2025-12-03 17:04:19,224 [INFO]  * Restarting with stat
+2025-12-03 17:04:19,517 [WARNING]  * Debugger is active!
+2025-12-03 17:04:19,518 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:04:19,567 [WARNING]  * Debugger is active!
+2025-12-03 17:04:19,568 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:04:41,599 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 17:04:41,599 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 17:04:41,600 [INFO]  * Restarting with stat
+2025-12-03 17:04:41,940 [WARNING]  * Debugger is active!
+2025-12-03 17:04:41,941 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:04:57,721 [INFO] 127.0.0.1 - - [03/Dec/2025 17:04:57] "POST /login HTTP/1.1" 200 -
+2025-12-03 17:05:02,909 [INFO] 127.0.0.1 - - [03/Dec/2025 17:05:02] "POST /login HTTP/1.1" 200 -
+2025-12-03 17:05:17,983 [INFO] 127.0.0.1 - - [03/Dec/2025 17:05:17] "GET /register HTTP/1.1" 200 -
+2025-12-03 17:06:09,181 [INFO] 127.0.0.1 - - [03/Dec/2025 17:06:09] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-12-03 17:06:09,185 [INFO] 127.0.0.1 - - [03/Dec/2025 17:06:09] "GET /register HTTP/1.1" 200 -
+2025-12-03 17:09:44,491 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\config.py', reloading
+2025-12-03 17:09:44,491 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\config.py', reloading
+2025-12-03 17:09:44,579 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\config.py', reloading
+2025-12-03 17:09:44,594 [INFO]  * Restarting with stat
+2025-12-03 17:09:44,611 [INFO]  * Restarting with stat
+2025-12-03 17:09:44,674 [INFO]  * Restarting with stat
+2025-12-03 17:09:44,971 [WARNING]  * Debugger is active!
+2025-12-03 17:09:44,972 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:09:44,973 [WARNING]  * Debugger is active!
+2025-12-03 17:09:44,974 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:09:45,034 [WARNING]  * Debugger is active!
+2025-12-03 17:09:45,035 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:12:28,985 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:12:28,986 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:12:28,986 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:12:29,106 [INFO]  * Restarting with stat
+2025-12-03 17:12:29,140 [INFO]  * Restarting with stat
+2025-12-03 17:12:29,141 [INFO]  * Restarting with stat
+2025-12-03 17:12:29,607 [WARNING]  * Debugger is active!
+2025-12-03 17:12:29,608 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:12:29,612 [WARNING]  * Debugger is active!
+2025-12-03 17:12:29,614 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:12:29,632 [WARNING]  * Debugger is active!
+2025-12-03 17:12:29,634 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:20:36,140 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 17:20:36,140 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 17:20:36,140 [INFO]  * Restarting with stat
+2025-12-03 17:20:36,466 [WARNING]  * Debugger is active!
+2025-12-03 17:20:36,467 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:20:41,348 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:41] "GET /register HTTP/1.1" 200 -
+2025-12-03 17:20:41,358 [WARNING] 404 error at /static/style.css
+2025-12-03 17:20:41,359 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:41] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:20:42,540 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:42] "POST /register HTTP/1.1" 200 -
+2025-12-03 17:20:42,551 [WARNING] 404 error at /static/style.css
+2025-12-03 17:20:42,552 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:42] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:20:46,138 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:46] "POST /register HTTP/1.1" 200 -
+2025-12-03 17:20:46,148 [WARNING] 404 error at /static/style.css
+2025-12-03 17:20:46,148 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:46] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:20:47,330 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:47] "GET /register HTTP/1.1" 200 -
+2025-12-03 17:20:50,056 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:50] "GET /login HTTP/1.1" 200 -
+2025-12-03 17:20:50,068 [WARNING] 404 error at /static/style.css
+2025-12-03 17:20:50,070 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:50] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:20:54,190 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:54] "POST /login HTTP/1.1" 200 -
+2025-12-03 17:20:54,201 [WARNING] 404 error at /static/style.css
+2025-12-03 17:20:54,202 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:54] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:20:59,597 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:59] "GET /register HTTP/1.1" 200 -
+2025-12-03 17:20:59,609 [WARNING] 404 error at /static/style.css
+2025-12-03 17:20:59,610 [INFO] 127.0.0.1 - - [03/Dec/2025 17:20:59] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:21:18,262 [INFO] New user registered: Teja8952
+2025-12-03 17:21:18,263 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:18] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-12-03 17:21:18,266 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:18] "GET /login HTTP/1.1" 200 -
+2025-12-03 17:21:18,281 [WARNING] 404 error at /static/style.css
+2025-12-03 17:21:18,282 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:21:24,265 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:24] "POST /login HTTP/1.1" 200 -
+2025-12-03 17:21:24,278 [WARNING] 404 error at /static/style.css
+2025-12-03 17:21:24,279 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:24] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:21:36,074 [INFO] User logged in: Teja8952
+2025-12-03 17:21:36,074 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-03 17:21:36,083 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:36] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 17:21:36,095 [WARNING] 404 error at /static/style.css
+2025-12-03 17:21:36,096 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:36] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:21:40,487 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:40] "GET /patients HTTP/1.1" 200 -
+2025-12-03 17:21:40,499 [WARNING] 404 error at /static/style.css
+2025-12-03 17:21:40,499 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:40] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:21:44,030 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:44] "GET /patients/new HTTP/1.1" 200 -
+2025-12-03 17:21:44,040 [WARNING] 404 error at /static/style.css
+2025-12-03 17:21:44,040 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:44] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:21:53,304 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:53] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 17:21:53,314 [WARNING] 404 error at /static/style.css
+2025-12-03 17:21:53,314 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:53] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:21:54,355 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:54] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 17:21:54,367 [WARNING] 404 error at /static/style.css
+2025-12-03 17:21:54,367 [INFO] 127.0.0.1 - - [03/Dec/2025 17:21:54] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:23:34,479 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 17:23:34,479 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 17:23:34,480 [INFO]  * Restarting with stat
+2025-12-03 17:23:34,821 [WARNING]  * Debugger is active!
+2025-12-03 17:23:34,822 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:25:21,389 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:21] "GET /register HTTP/1.1" 200 -
+2025-12-03 17:25:21,405 [WARNING] 404 error at /static/style.css
+2025-12-03 17:25:21,407 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:21] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:25:24,355 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:24] "GET /login HTTP/1.1" 200 -
+2025-12-03 17:25:24,364 [WARNING] 404 error at /static/style.css
+2025-12-03 17:25:24,365 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:24] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:25:40,738 [INFO] User logged in: Teja8952
+2025-12-03 17:25:40,738 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-03 17:25:40,744 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:40] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 17:25:40,758 [WARNING] 404 error at /static/style.css
+2025-12-03 17:25:40,759 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:40] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:25:50,812 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:50] "GET /patients HTTP/1.1" 200 -
+2025-12-03 17:25:50,823 [WARNING] 404 error at /static/style.css
+2025-12-03 17:25:50,824 [INFO] 127.0.0.1 - - [03/Dec/2025 17:25:50] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:40:56,581 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:56,581 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:56,581 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:56,582 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:56,582 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:56,707 [INFO]  * Restarting with stat
+2025-12-03 17:40:56,711 [INFO]  * Restarting with stat
+2025-12-03 17:40:56,715 [INFO]  * Restarting with stat
+2025-12-03 17:40:56,731 [INFO]  * Restarting with stat
+2025-12-03 17:40:56,732 [INFO]  * Restarting with stat
+2025-12-03 17:40:57,096 [WARNING]  * Debugger is active!
+2025-12-03 17:40:57,096 [WARNING]  * Debugger is active!
+2025-12-03 17:40:57,096 [WARNING]  * Debugger is active!
+2025-12-03 17:40:57,097 [WARNING]  * Debugger is active!
+2025-12-03 17:40:57,097 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:57,098 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:57,098 [WARNING]  * Debugger is active!
+2025-12-03 17:40:57,098 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:57,099 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:57,099 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:58,114 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:58,115 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:58,115 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:58,115 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:58,116 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:40:58,243 [INFO]  * Restarting with stat
+2025-12-03 17:40:58,243 [INFO]  * Restarting with stat
+2025-12-03 17:40:58,243 [INFO]  * Restarting with stat
+2025-12-03 17:40:58,246 [INFO]  * Restarting with stat
+2025-12-03 17:40:58,671 [WARNING]  * Debugger is active!
+2025-12-03 17:40:58,672 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:58,673 [WARNING]  * Debugger is active!
+2025-12-03 17:40:58,674 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:58,680 [WARNING]  * Debugger is active!
+2025-12-03 17:40:58,681 [WARNING]  * Debugger is active!
+2025-12-03 17:40:58,682 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:58,682 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:40:58,685 [WARNING]  * Debugger is active!
+2025-12-03 17:40:58,687 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:42:22,547 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 17:42:22,547 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 17:42:22,547 [INFO]  * Restarting with stat
+2025-12-03 17:42:22,881 [WARNING]  * Debugger is active!
+2025-12-03 17:42:22,883 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:42:30,252 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:30] "GET /patients HTTP/1.1" 200 -
+2025-12-03 17:42:30,262 [WARNING] 404 error at /static/style.css
+2025-12-03 17:42:30,264 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:30] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:42:31,407 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:31] "GET /patients HTTP/1.1" 200 -
+2025-12-03 17:42:31,417 [WARNING] 404 error at /static/style.css
+2025-12-03 17:42:31,418 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:31] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:42:32,426 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:32] "GET /patients HTTP/1.1" 200 -
+2025-12-03 17:42:32,435 [WARNING] 404 error at /static/style.css
+2025-12-03 17:42:32,436 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:32] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:42:33,804 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:33] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 17:42:33,951 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:33] "GET /login HTTP/1.1" 200 -
+2025-12-03 17:42:34,130 [INFO] 127.0.0.1 - - [03/Dec/2025 17:42:34] "GET /register HTTP/1.1" 200 -
+2025-12-03 17:43:12,601 [INFO] 127.0.0.1 - - [03/Dec/2025 17:43:12] "GET /login HTTP/1.1" 200 -
+2025-12-03 17:43:12,611 [WARNING] 404 error at /static/style.css
+2025-12-03 17:43:12,612 [INFO] 127.0.0.1 - - [03/Dec/2025 17:43:12] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:43:32,045 [INFO] User logged in: Teja8952
+2025-12-03 17:43:32,046 [INFO] 127.0.0.1 - - [03/Dec/2025 17:43:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-03 17:43:32,054 [INFO] 127.0.0.1 - - [03/Dec/2025 17:43:32] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 17:43:32,068 [WARNING] 404 error at /static/style.css
+2025-12-03 17:43:32,068 [INFO] 127.0.0.1 - - [03/Dec/2025 17:43:32] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:44:17,926 [INFO] 127.0.0.1 - - [03/Dec/2025 17:44:17] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 17:44:17,943 [WARNING] 404 error at /static/style.css
+2025-12-03 17:44:17,944 [INFO] 127.0.0.1 - - [03/Dec/2025 17:44:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 17:53:49,358 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:53:49,358 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:53:49,358 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:53:49,359 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:53:49,359 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:53:49,359 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:53:49,489 [INFO]  * Restarting with stat
+2025-12-03 17:53:49,499 [INFO]  * Restarting with stat
+2025-12-03 17:53:49,499 [INFO]  * Restarting with stat
+2025-12-03 17:53:49,500 [INFO]  * Restarting with stat
+2025-12-03 17:53:49,511 [INFO]  * Restarting with stat
+2025-12-03 17:53:49,511 [INFO]  * Restarting with stat
+2025-12-03 17:53:49,972 [WARNING]  * Debugger is active!
+2025-12-03 17:53:49,974 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:53:49,976 [WARNING]  * Debugger is active!
+2025-12-03 17:53:49,977 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:53:49,980 [WARNING]  * Debugger is active!
+2025-12-03 17:53:49,982 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:53:49,982 [WARNING]  * Debugger is active!
+2025-12-03 17:53:49,982 [WARNING]  * Debugger is active!
+2025-12-03 17:53:49,983 [WARNING]  * Debugger is active!
+2025-12-03 17:53:49,984 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:53:49,984 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:53:49,985 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:57:42,505 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:57:42,505 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:57:42,506 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:57:42,506 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:57:42,506 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:57:42,506 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:57:42,622 [INFO]  * Restarting with stat
+2025-12-03 17:57:42,646 [INFO]  * Restarting with stat
+2025-12-03 17:57:42,646 [INFO]  * Restarting with stat
+2025-12-03 17:57:42,660 [INFO]  * Restarting with stat
+2025-12-03 17:57:42,661 [INFO]  * Restarting with stat
+2025-12-03 17:57:42,663 [INFO]  * Restarting with stat
+2025-12-03 17:57:43,102 [WARNING]  * Debugger is active!
+2025-12-03 17:57:43,102 [WARNING]  * Debugger is active!
+2025-12-03 17:57:43,104 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:57:43,105 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:57:43,126 [WARNING]  * Debugger is active!
+2025-12-03 17:57:43,127 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:57:43,132 [WARNING]  * Debugger is active!
+2025-12-03 17:57:43,133 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:57:43,135 [WARNING]  * Debugger is active!
+2025-12-03 17:57:43,138 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:57:43,151 [WARNING]  * Debugger is active!
+2025-12-03 17:57:43,152 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:58:18,382 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:58:18,382 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:58:18,382 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:58:18,383 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:58:18,383 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:58:18,384 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-03 17:58:18,494 [INFO]  * Restarting with stat
+2025-12-03 17:58:18,513 [INFO]  * Restarting with stat
+2025-12-03 17:58:18,513 [INFO]  * Restarting with stat
+2025-12-03 17:58:18,513 [INFO]  * Restarting with stat
+2025-12-03 17:58:18,514 [INFO]  * Restarting with stat
+2025-12-03 17:58:18,534 [INFO]  * Restarting with stat
+2025-12-03 17:58:18,877 [WARNING]  * Debugger is active!
+2025-12-03 17:58:18,879 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:58:18,891 [WARNING]  * Debugger is active!
+2025-12-03 17:58:18,892 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:58:18,893 [WARNING]  * Debugger is active!
+2025-12-03 17:58:18,895 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:58:18,895 [WARNING]  * Debugger is active!
+2025-12-03 17:58:18,895 [WARNING]  * Debugger is active!
+2025-12-03 17:58:18,896 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:58:18,897 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 17:58:18,900 [WARNING]  * Debugger is active!
+2025-12-03 17:58:18,901 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 23:02:45,752 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-03 23:02:45,752 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-03 23:02:45,753 [INFO]  * Restarting with stat
+2025-12-03 23:02:46,091 [WARNING]  * Debugger is active!
+2025-12-03 23:02:46,100 [INFO]  * Debugger PIN: 114-932-997
+2025-12-03 23:02:50,984 [INFO] 127.0.0.1 - - [03/Dec/2025 23:02:50] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-03 23:02:51,021 [INFO] 127.0.0.1 - - [03/Dec/2025 23:02:51] "GET /dashboard HTTP/1.1" 200 -
+2025-12-03 23:02:51,035 [WARNING] 404 error at /static/style.css
+2025-12-03 23:02:51,037 [INFO] 127.0.0.1 - - [03/Dec/2025 23:02:51] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 23:02:59,038 [INFO] 127.0.0.1 - - [03/Dec/2025 23:02:59] "GET /patients HTTP/1.1" 200 -
+2025-12-03 23:02:59,052 [WARNING] 404 error at /static/style.css
+2025-12-03 23:02:59,053 [INFO] 127.0.0.1 - - [03/Dec/2025 23:02:59] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-03 23:03:13,629 [INFO] 127.0.0.1 - - [03/Dec/2025 23:03:13] "GET /profile HTTP/1.1" 200 -
+2025-12-03 23:03:13,639 [WARNING] 404 error at /static/style.css
+2025-12-03 23:03:13,640 [INFO] 127.0.0.1 - - [03/Dec/2025 23:03:13] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:13,566 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:13] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:13,576 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:13,577 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:13] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:13,777 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:13] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:13,787 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:13,788 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:13] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:13,922 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:13] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:13,934 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:13,935 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:13] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:14,567 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:14] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:14,578 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:14,579 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:14] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:14,770 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:14] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:14,798 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:14,799 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:14] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:14,958 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:14] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:14,968 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:14,968 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:14] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:15,137 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:15,147 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:15,148 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:15,317 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:15,328 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:15,329 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:15,491 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:15,501 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:15,502 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:15,671 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:15,681 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:15,681 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:15,851 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:15,861 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:15,862 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:15] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:16,023 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:16,033 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:16,034 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:16,218 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:16,229 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:16,229 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:16,420 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:16,431 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:16,432 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:16,607 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:16,617 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:16,617 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:16,795 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:16,805 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:16,805 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:16,983 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:16,993 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:16,994 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:17,185 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:17,195 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:17,196 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:17,366 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:17,376 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:17,377 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:17,568 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:17,578 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:17,579 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:17,732 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:17,743 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:17,744 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:17,928 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:17,938 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:17,939 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:18,115 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:18,125 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:18,126 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:18,303 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:18,314 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:18,314 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:18,498 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:18,508 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:18,509 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:18,676 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:18,687 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:18,688 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:18,859 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:18,870 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:18,872 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:18] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:19,053 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:19,064 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:19,065 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:19,257 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:19,268 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:19,269 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:19,435 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:19,446 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:19,447 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:19,645 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:19,657 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:19,658 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:19,871 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:19,881 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:19,882 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:19] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:20,313 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:20,323 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:20,324 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:20,508 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:20,520 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:20,521 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:20,680 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:20,690 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:20,691 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:20,884 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:20,894 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:20,895 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:20] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:21,123 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:21] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:21,133 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:21,134 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:21] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:08:21,424 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:21] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 00:08:21,435 [WARNING] 404 error at /static/style.css
+2025-12-04 00:08:21,435 [INFO] 127.0.0.1 - - [04/Dec/2025 00:08:21] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 00:14:23,838 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\app.py', reloading
+2025-12-04 00:14:23,939 [INFO]  * Restarting with stat
+2025-12-04 00:14:25,642 [WARNING]  * Debugger is active!
+2025-12-04 00:14:25,643 [INFO]  * Debugger PIN: 114-932-997
+2025-12-04 00:14:46,205 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 00:14:46,205 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 00:14:46,205 [INFO]  * Restarting with stat
+2025-12-04 00:14:46,575 [WARNING]  * Debugger is active!
+2025-12-04 00:14:46,576 [INFO]  * Debugger PIN: 114-932-997
+2025-12-04 00:50:26,249 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\models.py', reloading
+2025-12-04 00:50:26,569 [INFO]  * Restarting with stat
+2025-12-04 00:50:27,134 [WARNING]  * Debugger is active!
+2025-12-04 00:50:27,135 [INFO]  * Debugger PIN: 114-932-997
+2025-12-04 00:50:40,230 [INFO]  * Detected change in 'C:\\Users\\kskte\\Desktop\\secure_health_app\\models.py', reloading
+2025-12-04 00:50:40,776 [INFO]  * Restarting with stat
+2025-12-04 00:50:41,172 [WARNING]  * Debugger is active!
+2025-12-04 00:50:41,173 [INFO]  * Debugger PIN: 114-932-997
+2025-12-04 00:50:55,377 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 00:50:55,377 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 00:50:55,378 [INFO]  * Restarting with stat
+2025-12-04 00:50:55,743 [WARNING]  * Debugger is active!
+2025-12-04 00:50:55,744 [INFO]  * Debugger PIN: 114-932-997
+2025-12-04 01:10:40,867 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:10:40,867 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:10:40,867 [INFO]  * Restarting with stat
+2025-12-04 01:10:41,236 [WARNING]  * Debugger is active!
+2025-12-04 01:10:41,237 [INFO]  * Debugger PIN: 114-932-997
+2025-12-04 01:14:36,844 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:14:36,845 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:15:02,020 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:02] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-04 01:15:02,078 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:02] "GET /login HTTP/1.1" 200 -
+2025-12-04 01:15:02,094 [WARNING] 404 error at /static/style.css
+2025-12-04 01:15:02,096 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:02] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:15:16,703 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:16] "POST /login HTTP/1.1" 200 -
+2025-12-04 01:15:16,718 [WARNING] 404 error at /static/style.css
+2025-12-04 01:15:16,719 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:16] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:15:44,003 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:44] "POST /login HTTP/1.1" 200 -
+2025-12-04 01:15:44,015 [WARNING] 404 error at /static/style.css
+2025-12-04 01:15:44,016 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:44] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:15:54,127 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:54] "GET /register HTTP/1.1" 200 -
+2025-12-04 01:15:54,139 [WARNING] 404 error at /static/style.css
+2025-12-04 01:15:54,140 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:54] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:15:55,558 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:55] "POST /register HTTP/1.1" 200 -
+2025-12-04 01:15:55,570 [WARNING] 404 error at /static/style.css
+2025-12-04 01:15:55,571 [INFO] 127.0.0.1 - - [04/Dec/2025 01:15:55] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:16:00,156 [INFO] New user registered: Teja5645
+2025-12-04 01:16:00,157 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:00] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-12-04 01:16:00,162 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:00] "GET /login HTTP/1.1" 200 -
+2025-12-04 01:16:00,176 [WARNING] 404 error at /static/style.css
+2025-12-04 01:16:00,177 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:00] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:16:03,453 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:03] "POST /login HTTP/1.1" 200 -
+2025-12-04 01:16:03,467 [WARNING] 404 error at /static/style.css
+2025-12-04 01:16:03,468 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:03] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:16:08,713 [INFO] User logged in: Teja5645
+2025-12-04 01:16:08,714 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-04 01:16:08,728 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:08] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 01:16:08,816 [WARNING] 404 error at /static/style.css
+2025-12-04 01:16:08,817 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:08] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:16:33,303 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:33] "GET /patients HTTP/1.1" 200 -
+2025-12-04 01:16:33,314 [WARNING] 404 error at /static/style.css
+2025-12-04 01:16:33,315 [INFO] 127.0.0.1 - - [04/Dec/2025 01:16:33] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:19:13,724 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:19:13,724 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:19:17,814 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:17] "GET /patients HTTP/1.1" 200 -
+2025-12-04 01:19:17,823 [WARNING] 404 error at /static/style.css
+2025-12-04 01:19:17,825 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:17] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:19:20,087 [INFO] User logged out: Teja5645
+2025-12-04 01:19:20,087 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-04 01:19:20,093 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:20] "GET /login HTTP/1.1" 200 -
+2025-12-04 01:19:20,103 [WARNING] 404 error at /static/style.css
+2025-12-04 01:19:20,104 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:20] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:19:21,758 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:21] "GET /login HTTP/1.1" 200 -
+2025-12-04 01:19:21,768 [WARNING] 404 error at /static/style.css
+2025-12-04 01:19:21,769 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:21] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:19:22,299 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:22] "GET /login HTTP/1.1" 200 -
+2025-12-04 01:19:22,309 [WARNING] 404 error at /static/style.css
+2025-12-04 01:19:22,309 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:22] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:19:22,674 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:22] "GET /login HTTP/1.1" 200 -
+2025-12-04 01:19:22,684 [WARNING] 404 error at /static/style.css
+2025-12-04 01:19:22,684 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:22] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:19:23,853 [INFO] User logged in: Teja5645
+2025-12-04 01:19:23,854 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-04 01:19:23,866 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:23] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 01:19:23,883 [WARNING] 404 error at /static/style.css
+2025-12-04 01:19:23,883 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:23] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:19:46,180 [INFO] User logged out: Teja5645
+2025-12-04 01:19:46,181 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:46] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-04 01:19:46,184 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:46] "GET /login HTTP/1.1" 200 -
+2025-12-04 01:19:46,195 [WARNING] 404 error at /static/style.css
+2025-12-04 01:19:46,195 [INFO] 127.0.0.1 - - [04/Dec/2025 01:19:46] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:20:26,833 [INFO] User logged in: admin
+2025-12-04 01:20:26,834 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-04 01:20:26,841 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:26] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 01:20:26,854 [WARNING] 404 error at /static/style.css
+2025-12-04 01:20:26,854 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:26] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:20:36,837 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:36] "GET /profile HTTP/1.1" 200 -
+2025-12-04 01:20:36,846 [WARNING] 404 error at /static/style.css
+2025-12-04 01:20:36,847 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:36] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:20:55,012 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:55] "GET /patients HTTP/1.1" 200 -
+2025-12-04 01:20:55,022 [WARNING] 404 error at /static/style.css
+2025-12-04 01:20:55,023 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:55] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:20:56,839 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:56] "GET /patients/67 HTTP/1.1" 200 -
+2025-12-04 01:20:56,848 [WARNING] 404 error at /static/style.css
+2025-12-04 01:20:56,849 [INFO] 127.0.0.1 - - [04/Dec/2025 01:20:56] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:21:00,600 [INFO] Patient deleted by admin: 67
+2025-12-04 01:21:00,601 [INFO] 127.0.0.1 - - [04/Dec/2025 01:21:00] "[32mPOST /patients/67/delete HTTP/1.1[0m" 302 -
+2025-12-04 01:21:00,605 [INFO] 127.0.0.1 - - [04/Dec/2025 01:21:00] "GET /patients HTTP/1.1" 200 -
+2025-12-04 01:21:00,617 [WARNING] 404 error at /static/style.css
+2025-12-04 01:21:00,618 [INFO] 127.0.0.1 - - [04/Dec/2025 01:21:00] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:27:05,302 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:27:05,302 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:30:47,495 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:30:47,495 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:32:11,704 [INFO] 127.0.0.1 - - [04/Dec/2025 01:32:11] "[31m[1mGET /api/patients/summary HTTP/1.1[0m" 401 -
+2025-12-04 01:32:34,651 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:32:34,651 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:33:01,853 [INFO] 127.0.0.1 - - [04/Dec/2025 01:33:01] "GET /api/patients/summary HTTP/1.1" 200 -
+2025-12-04 01:33:15,405 [INFO] 127.0.0.1 - - [04/Dec/2025 01:33:15] "[31m[1mGET /api/patients/summary HTTP/1.1[0m" 401 -
+2025-12-04 01:37:17,594 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:37:17,594 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:37:34,322 [INFO] 127.0.0.1 - - [04/Dec/2025 01:37:34] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-04 01:37:34,340 [INFO] 127.0.0.1 - - [04/Dec/2025 01:37:34] "GET /dashboard HTTP/1.1" 200 -
+2025-12-04 01:37:34,352 [WARNING] 404 error at /static/style.css
+2025-12-04 01:37:34,355 [INFO] 127.0.0.1 - - [04/Dec/2025 01:37:34] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+2025-12-04 01:39:46,355 [INFO] 127.0.0.1 - - [04/Dec/2025 01:39:46] "[31m[1mGET /api/patients/summary HTTP/1.1[0m" 401 -
+2025-12-04 01:46:36,247 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:46:36,248 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:46:59,845 [INFO] 127.0.0.1 - - [04/Dec/2025 01:46:59] "[31m[1mGET /api/patients/summary HTTP/1.1[0m" 401 -
+2025-12-04 01:50:34,883 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-04 01:50:34,883 [INFO] [33mPress CTRL+C to quit[0m
+2025-12-04 01:50:48,056 [INFO] 127.0.0.1 - - [04/Dec/2025 01:50:48] "GET /api/patients/summary HTTP/1.1" 200 -

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Patient {{ patient.id }}{% endblock %}
+{% block content %}
+<h2>Patient {{ patient.id }}</h2>
+
+<ul class="list-group mb-3">
+  <li class="list-group-item">Gender: {{ patient.gender }}</li>
+  <li class="list-group-item">Age: {{ patient.age }}</li>
+  <li class="list-group-item">Hypertension: {{ "Yes" if patient.hypertension else "No" }}</li>
+  <li class="list-group-item">Heart Disease: {{ "Yes" if patient.heart_disease else "No" }}</li>
+  <li class="list-group-item">Ever Married: {{ patient.ever_married | e }}</li>
+  <li class="list-group-item">Work Type: {{ patient.work_type | e }}</li>
+  <li class="list-group-item">Residence Type: {{ patient.residence_type | e }}</li>
+  <li class="list-group-item">Avg Glucose Level: {{ patient.avg_glucose_level }}</li>
+  <li class="list-group-item">BMI: {{ patient.bmi }}</li>
+  <li class="list-group-item">Smoking Status: {{ patient.smoking_status | e }}</li>
+  <li class="list-group-item">Stroke: {{ "Yes" if patient.stroke else "No" }}</li>
+</ul>
+
+<a class="btn btn-secondary" href="{{ url_for('patient_edit', patient_id=patient.id) }}">Edit</a>
+
+<form method="POST" action="{{ url_for('patient_delete', patient_id=patient.id) }}" class="d-inline"
+      onsubmit="return confirm('Are you sure you want to delete this patient?');">
+  <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+
+<a class="btn btn-link" href="{{ url_for('patients_list') }}">Back to list</a>
+{% endblock %}

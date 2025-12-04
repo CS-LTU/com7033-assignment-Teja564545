@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2>Patient Analytics Dashboard</h2>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-3">
+    <div class="dash-card dash-card-primary">
+      <h6>Total Patients</h6>
+      <div class="dash-value">{{ total_patients }}</div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="dash-card dash-card-danger">
+      <h6>Stroke Cases</h6>
+      <div class="dash-value">{{ stroke_count }}</div>
+      <small>{{ stroke_pct }}% of patients</small>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="dash-card dash-card-warning">
+      <h6>Hypertension</h6>
+      <div class="dash-value">{{ hypertension_count }}</div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="dash-card dash-card-success">
+      <h6>Heart Disease</h6>
+      <div class="dash-value">{{ heart_count }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-6">
+    <div class="chart-card">
+      <h5 class="mb-3">Stroke vs Non-Stroke</h5>
+      <canvas id="strokeChart"></canvas>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="chart-card">
+      <h5 class="mb-3">Stroke Cases by Gender</h5>
+      <canvas id="genderChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3 mb-4">
+  <div class="col-md-6">
+    <div class="chart-card">
+      <h5 class="mb-3">Average Patient Metrics</h5>
+      <p class="mb-1"><strong>Average Age:</strong> {{ avg_age }} years</p>
+      <p class="mb-1"><strong>Average BMI:</strong> {{ avg_bmi }}</p>
+      <p class="text-muted mb-0">
+        These values are calculated over all recorded patients in the system.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6 d-flex align-items-center">
+    <a class="btn btn-primary ms-md-auto" href="{{ url_for('patients_list') }}">View All Patients</a>
+  </div>
+</div>
+
+<script>
+  const ctx1 = document.getElementById('strokeChart').getContext('2d');
+  const strokeChart = new Chart(ctx1, {
+    type: 'doughnut',
+    data: {
+      labels: ['Stroke', 'No Stroke'],
+      datasets: [{
+        data: [{{ stroke_count }}, {{ total_patients - stroke_count }}],
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { position: 'bottom' } }
+    }
+  });
+
+  const ctx2 = document.getElementById('genderChart').getContext('2d');
+  const genderChart = new Chart(ctx2, {
+    type: 'bar',
+    data: {
+      labels: {{ genders|tojson }},
+      datasets: [{
+        label: 'Stroke cases',
+        data: {{ gender_counts|tojson }},
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true } }
+    }
+  });
+</script>
+{% endblock %}

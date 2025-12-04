@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<h2>Your Profile</h2>
+
+<div class="card p-3 mb-3">
+  <p><strong>Username:</strong> {{ user.username }}</p>
+  <p><strong>Role:</strong> {{ user.role }}</p>
+  <p class="text-muted">
+    This application stores only the minimum necessary account information.
+    Passwords are never stored in plain text; they are hashed using PBKDF2
+    with a pepper and per-user salt.
+  </p>
+</div>
+{% endblock %}
