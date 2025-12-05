@@ -1,0 +1,16 @@
+# Python venv
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# SQLite DBs (optional, if you don't want to upload them)
+*.db
+
+# Instance folder (Flask configs etc.)
+instance/
+
+# Environment files
+.env
+*.env
