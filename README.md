@@ -117,5 +117,5 @@ secure_health_app/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/secure-health-app.git
+git clone https://github.com/Teja564545/secure-health-app.git
 cd secure-health-app
