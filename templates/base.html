@@ -1,69 +1,129 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="utf-8">
-  <title>{% block title %}Secure Health App{% endblock %}</title>
+  <title>{% block title %}HealthApp{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
-  >
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-bx3V4aXl7up31SxL8R5hHnXl4ltx8P2TDqQq2vi8Hq4Cb5zIu3J4xvUVODv+X8qJftIuvj82Q7YpN5iVQmYVPQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- Chart.js must be loaded BEFORE our dashboard script -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="{{ url_for('dashboard') }}">HealthApp</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        {% if current_user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('patients_list') }}">Patients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('logout') }}">Logout ({{ current_user.username }})</a>
-          </li>
-        {% else %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
-          </li>
-        {% endif %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('profile') }}">Profile</a>
-          </li>
 
-      </ul>
-    </div>
-  </div>
-</nav>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('dashboard') }}">HealthApp</a>
 
-<div class="container">
-  <!-- Flash messages -->
-  {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
-      {% for category, message in messages %}
-        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
-          {{ message }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- LEFT LINKS -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            {% if current_user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('patients_list') }}">Patients</a>
+              </li>
+              {% if current_user.role == 'admin' %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('audit_log') }}">Audit Log</a>
+              </li>
+              {% endif %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('enable_2fa') }}">2FA</a>
+              </li>
+            {% endif %}
+          </ul>
+
+          <!-- RIGHT LINKS -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            {% if current_user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('profile') }}">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+              </li>
+            {% endif %}
+
+            <!-- Theme toggle -->
+            <li class="nav-item ms-2">
+              <button id="themeToggle" type="button" class="btn btn-sm btn-outline-light">
+                🌓 Theme
+              </button>
+            </li>
+          </ul>
         </div>
-      {% endfor %}
-    {% endif %}
-  {% endwith %}
+      </div>
+    </nav>
 
-  {% block content %}{% endblock %}
-</div>
+    <!-- MAIN CONTENT -->
+    <main class="container main-container py-4">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="mt-2">
+          {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      {% endwith %}
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      {% block content %}{% endblock %}
+    </main>
+
+    <!-- JS: Bootstrap + Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Dark mode script -->
+    <script>
+      console.log("JS is running from base.html!");
+      (function () {
+        const body = document.body;
+        const saved = localStorage.getItem('theme');
+        if (saved === 'dark') {
+          body.classList.add('dark-mode');
+        }
+
+        const btn = document.getElementById('themeToggle');
+        if (btn) {
+          btn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const mode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', mode);
+          });
+        }
+      })();
+      
+    </script>
+  </body>
 </html>

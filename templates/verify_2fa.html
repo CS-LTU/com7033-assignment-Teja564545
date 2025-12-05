@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Verify 2FA{% endblock %}
+{% block content %}
+<div class="container mt-4" style="max-width: 400px;">
+  <h2 class="mb-3 text-center">Two-Factor Authentication</h2>
+  <p class="text-center">
+    Enter the 6-digit code from your authenticator app to complete login.
+  </p>
+
+  <form method="post">
+    <div class="mb-3">
+      <label for="token" class="form-label">6-digit code</label>
+      <input type="text" name="token" id="token" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Verify</button>
+  </form>
+</div>
+{% endblock %}

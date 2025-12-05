@@ -1,0 +1,524 @@
+/* ===============================
+   DESIGN TOKENS
+   =============================== */
+:root {
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --color-bg-light: #f3f4f6;
+    --color-surface-light: #ffffff;
+    --color-text-main: #0f172a;
+    --color-text-muted: #6b7280;
+
+    --color-primary: #3b82f6;   /* blue */
+    --color-primary-soft: #dbeafe;
+    --color-success: #22c55e;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+
+    --radius-card: 16px;
+    --radius-pill: 999px;
+    --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.22);
+}
+
+/* Base body styles (light mode) */
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-main);
+}
+
+/* Dark mode base */
+body.dark-mode {
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.main-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.navbar {
+  background-color: #111827;
+}
+
+.card {
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* ---------- DARK MODE ---------- */
+
+body.dark-mode {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+body.dark-mode .navbar {
+  background-color: #020617 !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
+}
+
+body.dark-mode .card {
+  background: radial-gradient(circle at top left, #1f2937 0, #020617 60%);
+  border-color: #4b5563;
+  color: #e5e7eb;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
+}
+/* ----- Patient table hover + animation ----- */
+
+.patient-table tbody tr.patient-row {
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, background-color 0.15s ease-out;
+}
+
+.patient-table tbody tr.patient-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.35);
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+/* ----- Sort arrow size ----- */
+.sort-arrow {
+  font-size: 0.75rem;
+}
+
+/* ----- Age colouring ----- */
+
+.badge.age-young {
+  background-color: #22c55e; /* green */
+  color: #0b1120;
+}
+
+.badge.age-mid {
+  background-color: #eab308; /* yellow */
+  color: #0b1120;
+}
+
+.badge.age-old {
+  background-color: #ef4444; /* red */
+  color: #f9fafb;
+}
+
+/* Dark mode tweaks */
+body.dark-mode .badge.age-young {
+  background-color: #16a34a;
+  color: #e5e7eb;
+}
+
+body.dark-mode .badge.age-mid {
+  background-color: #ca8a04;
+  color: #e5e7eb;
+}
+
+body.dark-mode .badge.age-old {
+  background-color: #b91c1c;
+  color: #f9fafb;
+}
+.patient-row {
+  cursor: pointer;
+}
+.page-link.animate-page {
+  transition: all 0.18s ease;
+}
+
+.page-link.animate-page:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+}
+.metric-card, .card {
+    border-radius: 14px;
+    border: none;
+    background: var(--card-bg);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover, .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+body {
+    background-color: #f1f3f5;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar {
+    background-color: #1f2937;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.btn-theme {
+    font-size: 14px;
+}
+/* ------------------------------ */
+/* DARK MODE TEXT COLOR FIX       */
+/* ------------------------------ */
+
+body.dark-mode {
+    color: #ffffff !important;
+}
+
+/* Make all headings white */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+/* Card text white */
+body.dark-mode .card {
+    color: #ffffff !important;
+}
+
+/* Navbar links */
+body.dark-mode .navbar a {
+    color: #ffffff !important;
+}
+
+/* Paragraph text */
+body.dark-mode p,
+body.dark-mode small,
+body.dark-mode span,
+body.dark-mode li {
+    color: #ffffff !important;
+}
+
+/* Fix table text if needed */
+body.dark-mode table {
+    color: #ffffff !important;
+}
+/* =============================== */
+/* DARK MODE — TABLE FIX           */
+/* =============================== */
+
+/* ===================================== */
+/* DARK MODE – TABLE STYLES (Patients)   */
+/* ===================================== */
+
+/* Support either body.dark-mode or body.dark */
+body.dark-mode .table,
+body.dark .table {
+    background-color: #020617 !important; /* overall table bg */
+    color: #e5e7eb !important;
+}
+
+/* All table cells (header + body rows) */
+body.dark-mode .table > :not(caption) > * > *,
+body.dark .table > :not(caption) > * > * {
+    background-color: #020617 !important; /* row bg */
+    color: #e5e7eb !important;           /* text color */
+    border-color: #1f2937 !important;    /* border color */
+}
+
+/* Header row darker */
+body.dark-mode .table thead > tr > th,
+body.dark .table thead > tr > th {
+    background-color: #0f172a !important;
+    color: #f9fafb !important;
+}
+
+/* Hover row */
+body.dark-mode .table tbody > tr:hover > * ,
+body.dark .table tbody > tr:hover > * {
+    background-color: #111827 !important;
+}
+
+/* "View" button */
+body.dark-mode .btn-outline-secondary,
+body.dark .btn-outline-secondary {
+    color: #e5e7eb !important;
+    border-color: #6b7280 !important;
+}
+
+body.dark-mode .btn-outline-secondary:hover,
+body.dark .btn-outline-secondary:hover {
+    background-color: #4b5563 !important;
+    color: #ffffff !important;
+}
+
+/* Search input + selects */
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark .form-control,
+body.dark .form-select {
+    background-color: #0f172a !important;
+    color: #e5e7eb !important;
+    border-color: #1f2937 !important;
+}
+
+body.dark-mode .form-control::placeholder,
+body.dark .form-control::placeholder {
+    color: #9ca3af !important;
+}
+
+/* Clear button that uses .btn-light */
+body.dark-mode .btn-light,
+body.dark .btn-light {
+    background-color: #1f2937 !important;
+    color: #f9fafb !important;
+    border: none !important;
+}
+/* subtle row striping */
+body.dark-mode .table tbody > tr:nth-child(even) > * {
+    background-color: #050816 !important;
+}
+
+/* softer hover glow */
+body.dark-mode .table tbody > tr:hover > * {
+    background-color: #111827 !important;
+    box-shadow: 0 0 0 1px #1d4ed8 inset;
+}
+/* =============================== */
+/* DARK MODE – FILTER BAR / CARDS  */
+/* =============================== */
+
+/* Make any bg-light elements dark in dark mode */
+body.dark-mode .bg-light,
+body.dark .bg-light {
+    background-color: #020617 !important;
+    color: #e5e7eb !important;
+}
+
+/* Cards used as containers */
+body.dark-mode .card.bg-light,
+body.dark .card.bg-light {
+    background-color: #020617 !important;
+    border-color: #1f2937 !important;
+}
+
+/* Optional: give the whole filter bar a subtle border */
+body.dark-mode .filter-bar,
+body.dark .filter-bar {
+    background-color: #020617 !important;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+}
+
+/* ========================================================= */
+/* DARK MODE FIX — PAGINATION                                */
+/* ========================================================= */
+
+body.dark-mode .pagination .page-link,
+body.dark .pagination .page-link {
+    background-color: #111827 !important;   /* dark grey */
+    color: #e5e7eb !important;              /* light text */
+    border: 1px solid #374151 !important;   /* subtle border */
+}
+
+body.dark-mode .pagination .page-link:hover,
+body.dark .pagination .page-link:hover {
+    background-color: #1f2937 !important;
+    color: #fff !important;
+}
+
+body.dark-mode .pagination .page-item.active .page-link,
+body.dark .pagination .page-item.active .page-link {
+    background-color: #3b82f6 !important;  /* blue highlight */
+    border-color: #3b82f6 !important;
+    color: white !important;
+}
+
+body.dark-mode .pagination .page-item.disabled .page-link,
+body.dark .pagination .page-item.disabled .page-link {
+    background-color: #1f2937 !important;
+    color: #6b7280 !important; /* grey text for disabled */
+}
+body.dark-mode .pagination .page-link,
+body.dark .pagination .page-link {
+    border-radius: 8px !important;
+    margin: 0 3px;
+    padding: 6px 14px;
+}
+/* ===============================
+   NAVBAR
+   =============================== */
+.navbar {
+    background: #020617;                  /* dark bar */
+    border-bottom: 1px solid #111827;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    color: #9ca3af;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #f9fafb;
+}
+
+/* Right-side items (profile/logout/theme) a bit tighter */
+.navbar-nav.ms-auto .nav-link {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+/* ===============================
+   CARDS / PANELS
+   =============================== */
+
+.card {
+    border-radius: var(--radius-card);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    background-color: var(--color-surface-light);
+}
+
+/* Dark mode card */
+body.dark-mode .card {
+    background: radial-gradient(circle at top left, #0f172a, #020617);
+    border-color: #111827;
+    box-shadow: 0 20px 55px rgba(15, 23, 42, 0.85);
+}
+
+/* Dashboard metric cards */
+.metric-card-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.metric-card-value {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.metric-card-subtext {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+/* Dark mode tweaks for metric text */
+body.dark-mode .metric-card-title {
+    color: #9ca3af;
+}
+body.dark-mode .metric-card-subtext {
+    color: #6b7280;
+}
+/* ===============================
+   BUTTONS
+   =============================== */
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    border-color: #2563eb;
+    font-weight: 600;
+    border-radius: 999px;
+    padding-inline: 1.25rem;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+    transition: transform 0.08s ease-out, box-shadow 0.08s ease-out;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 16px 40px rgba(37, 99, 235, 0.55);
+}
+
+.btn-outline-primary {
+    border-radius: 999px;
+    font-weight: 500;
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+.btn-outline-primary:hover {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+/* Danger button for deletes */
+.btn-danger {
+    border-radius: 999px;
+    background: #ef4444;
+    border-color: #b91c1c;
+}
+
+/* ===============================
+   FORM CONTROLS
+   =============================== */
+.form-control,
+.form-select {
+    border-radius: 999px;
+    border: 1px solid #cbd5f5;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-inline: 1rem;
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+}
+/* ===============================
+   TABLES – PATIENT LIST
+   =============================== */
+
+.table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table thead th {
+    border-bottom: 1px solid #1f2937;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    background-color: #020617;
+}
+
+.table tbody td {
+    border-color: #020617;
+    vertical-align: middle;
+    font-size: 0.95rem;
+}
+
+/* Row hover */
+body.dark-mode .table tbody tr:hover > * {
+    background-color: #030712 !important;
+}
+
+/* Badges for age / stroke that you already use */
+.badge-pill {
+    border-radius: 999px;
+    padding-inline: 0.6rem;
+    padding-block: 0.18rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+
+

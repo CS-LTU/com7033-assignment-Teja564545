@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Enable 2FA{% endblock %}
+
+{% block content %}
+<div class="container mt-4" style="max-width: 600px;">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title mb-3">Enable Two-Factor Authentication</h3>
+
+      <p>
+        Use an authenticator app (for example <strong>Google Authenticator</strong> or
+        <strong>Microsoft Authenticator</strong>) and add a new account using the secret key below.
+      </p>
+
+      <div class="alert alert-secondary">
+        <strong>Secret key:</strong>
+        <code style="font-size: 1.1rem;">
+          {{ secret if secret else "NO SECRET (ERROR)" }}
+        </code>
+      </div>
+
+      <p class="mb-3">
+        After adding this key to your app, enter the current 6-digit code from the app to confirm and
+        enable 2FA on your account.
+      </p>
+
+      <form method="post">
+        <div class="mb-3">
+          <label for="code" class="form-label">6-digit code</label>
+          <input
+            type="text"
+            name="code"
+            id="code"
+            class="form-control"
+            placeholder="123456"
+            required
+          >
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enable 2FA</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

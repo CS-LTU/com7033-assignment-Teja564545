@@ -1,98 +1,197 @@
 {% extends "base.html" %}
 {% block title %}Dashboard{% endblock %}
 {% block content %}
-<h2>Patient Analytics Dashboard</h2>
 
-<div class="row g-3 mb-4">
-  <div class="col-md-3">
-    <div class="dash-card dash-card-primary">
-      <h6>Total Patients</h6>
-      <div class="dash-value">{{ total_patients }}</div>
+<div class="container-fluid mt-4">
+
+    <!-- PAGE TITLE -->
+    <h2 class="fw-bold mb-4">Patient Analytics Dashboard</h2>
+
+    <!-- TOP METRIC CARDS -->
+    <div class="row g-4">
+        
+        <!-- TOTAL PATIENTS -->
+        <div class="col-md-3">
+            <div class="card metric-card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6 class="text-muted mb-2">TOTAL PATIENTS</h6>
+                    <h2 class="fw-bold">{{ total_patients }}</h2>
+                    <small class="text-muted">All records in system</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- STROKE CASES -->
+        <div class="col-md-3">
+            <div class="card metric-card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6 class="text-muted mb-2">STROKE CASES</h6>
+                    <h2 class="fw-bold">{{ stroke_count }}</h2>
+                    <small class="text-muted">{{ stroke_pct }}% of patients</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- HYPERTENSION -->
+        <div class="col-md-3">
+            <div class="card metric-card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6 class="text-muted mb-2">HYPERTENSION</h6>
+                    <h2 class="fw-bold">{{ hypertension_count }}</h2>
+                    <small class="text-muted">Patients with hypertension</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEART DISEASE -->
+        <div class="col-md-3">
+            <div class="card metric-card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h6 class="text-muted mb-2">HEART DISEASE</h6>
+                    <h2 class="fw-bold">{{ heart_count }}</h2>
+                    <small class="text-muted">Patients with heart disease</small>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="dash-card dash-card-danger">
-      <h6>Stroke Cases</h6>
-      <div class="dash-value">{{ stroke_count }}</div>
-      <small>{{ stroke_pct }}% of patients</small>
+
+    <!-- SPACING -->
+    <div class="my-4"></div>
+
+    <!-- NEXT ROW (AVG AGE/BMI & STROKE GENDER NUMBERS) -->
+    <div class="row g-4">
+
+        <!-- AVERAGE AGE & BMI -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">Average Age &amp; BMI</h5>
+                    <p class="mb-1">Average Age: <strong>{{ avg_age }}</strong></p>
+                    <p class="mb-1">Average BMI: <strong>{{ avg_bmi }}</strong></p>
+                    <small class="text-muted">
+                        Use these indicators to assess general population risk profiles.
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- STROKE BY GENDER (NUMBERS) -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">Stroke by Gender (Numbers)</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        {% if genders and gender_counts %}
+                            {% for g in genders %}
+                                {% set c = gender_counts[loop.index0] %}
+                                <li class="d-flex justify-content-between mb-2">
+                                    <span>{{ g or "Unknown" }}</span>
+                                    <span class="fw-semibold">{{ c }} case(s)</span>
+                                </li>
+                            {% endfor %}
+                        {% else %}
+                            <li class="text-muted">No stroke cases recorded.</li>
+                        {% endif %}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="dash-card dash-card-warning">
-      <h6>Hypertension</h6>
-      <div class="dash-value">{{ hypertension_count }}</div>
+
+    <div class="my-4"></div>
+
+    <!-- CHARTS ROW -->
+    <div class="row g-4">
+
+        <!-- PIE CHART -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">Stroke vs Non-Stroke</h5>
+                    <canvas id="strokePieChart" height="160"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- BAR CHART -->
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <h5 class="fw-bold mb-3">Stroke Cases by Gender</h5>
+                    <canvas id="strokeBarChart" height="160"></canvas>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="dash-card dash-card-success">
-      <h6>Heart Disease</h6>
-      <div class="dash-value">{{ heart_count }}</div>
-    </div>
-  </div>
+
 </div>
 
-<div class="row g-3 mb-4">
-  <div class="col-md-6">
-    <div class="chart-card">
-      <h5 class="mb-3">Stroke vs Non-Stroke</h5>
-      <canvas id="strokeChart"></canvas>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="chart-card">
-      <h5 class="mb-3">Stroke Cases by Gender</h5>
-      <canvas id="genderChart"></canvas>
-    </div>
-  </div>
-</div>
 
-<div class="row g-3 mb-4">
-  <div class="col-md-6">
-    <div class="chart-card">
-      <h5 class="mb-3">Average Patient Metrics</h5>
-      <p class="mb-1"><strong>Average Age:</strong> {{ avg_age }} years</p>
-      <p class="mb-1"><strong>Average BMI:</strong> {{ avg_bmi }}</p>
-      <p class="text-muted mb-0">
-        These values are calculated over all recorded patients in the system.
-      </p>
-    </div>
-  </div>
-  <div class="col-md-6 d-flex align-items-center">
-    <a class="btn btn-primary ms-md-auto" href="{{ url_for('patients_list') }}">View All Patients</a>
-  </div>
-</div>
-
+<!-- ====================== CHART SCRIPTS ====================== -->
 <script>
-  const ctx1 = document.getElementById('strokeChart').getContext('2d');
-  const strokeChart = new Chart(ctx1, {
-    type: 'doughnut',
-    data: {
-      labels: ['Stroke', 'No Stroke'],
-      datasets: [{
-        data: [{{ stroke_count }}, {{ total_patients - stroke_count }}],
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { position: 'bottom' } }
-    }
-  });
 
-  const ctx2 = document.getElementById('genderChart').getContext('2d');
-  const genderChart = new Chart(ctx2, {
-    type: 'bar',
-    data: {
-      labels: {{ genders|tojson }},
-      datasets: [{
-        label: 'Stroke cases',
-        data: {{ gender_counts|tojson }},
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { display: false } },
-      scales: { y: { beginAtZero: true } }
+    /* -------------------------------------
+       🔵 STROKE PIE CHART
+    -------------------------------------- */
+    const pieCtx = document.getElementById("strokePieChart").getContext("2d");
+    new Chart(pieCtx, {
+        type: "doughnut",
+        data: {
+            labels: ["Stroke", "Non-Stroke"],
+            datasets: [{
+                data: [{{ stroke_count }}, {{ total_patients - stroke_count }}],
+                backgroundColor: ["#FF4C4C", "#57CC99"],  /* red + soft green */
+                borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            cutout: "55%",
+            plugins: {
+                legend: { labels: { color: getTextColor() } }
+            }
+        }
+    });
+
+    /* -------------------------------------
+       🔵 BAR CHART (stroke cases by gender)
+    -------------------------------------- */
+    const barCtx = document.getElementById("strokeBarChart").getContext("2d");
+    new Chart(barCtx, {
+        type: "bar",
+        data: {
+            labels: [{% for g in genders %}"{{ g or 'Unknown' }}",{% endfor %}],
+            datasets: [{
+                label: "Cases",
+                data: [{% for c in gender_counts %}{{ c }},{% endfor %}],
+                backgroundColor: "#4D8BFF",  /* soft professional blue */
+                borderWidth: 0,
+                borderRadius: 6
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { labels: { color: getTextColor() } }
+            },
+            scales: {
+                y: { ticks: { color: getTextColor() } },
+                x: { ticks: { color: getTextColor() } }
+            }
+        }
+    });
+
+    /* -------------------------------------
+       🔵 Auto-switch chart text color with theme
+    -------------------------------------- */
+    function getTextColor() {
+        return document.body.classList.contains("dark-mode") ? "#E5E5E5" : "#222";
     }
-  });
+
 </script>
+
 {% endblock %}
